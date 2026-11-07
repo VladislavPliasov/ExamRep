@@ -1,0 +1,11 @@
+.git
+.terraform
+terraform
+scripts
+docs
+*.md
+app/node_modules
+app/dist
+app/.git
+app/.opencode
+.env*

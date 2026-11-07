@@ -1,0 +1,17 @@
+# Copy to terraform.tfvars (gitignored) and adjust if needed.
+# AWS credentials are NOT stored here - they come from environment variables:
+#   AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY (, AWS_SESSION_TOKEN)
+
+aws_region   = "eu-north-1"
+hostname     = "todoai.ezfpv.pp.ua"
+zone_name    = "ezfpv.pp.ua"
+
+# Set to false if the hosted zone already exists in the account
+create_route53_zone = true
+
+instance_type    = "t3.micro"
+min_size         = 1
+max_size         = 4
+desired_capacity = 2
+
+requests_per_target = 500
